@@ -1,0 +1,19 @@
+.categoryList {
+    color: $dark-blue;
+    font-family: 'Open Sans', 'PT Sans', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.categoryList__items {
+    padding: 0 $xl-size 0 0;
+    margin: 0;
+}
+
+.categoryList__item {
+    cursor: pointer;
+    transition: $transition-speed;
+    &:hover {
+        font-size: $m-size-hover;
+    }
+}

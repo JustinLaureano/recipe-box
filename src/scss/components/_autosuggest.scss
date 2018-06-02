@@ -1,0 +1,17 @@
+.react-autosuggest__container {
+    display: flex;
+}
+
+.react-autosuggest__suggestions-container {
+    position: absolute;
+    top: $header-height;
+    background: white;
+    width: 300px;
+    z-index: 99;
+}
+
+.react-autosuggest__suggestions-container--open {
+    border-left: 1px solid $dark-blue;
+    border-right: 1px solid $dark-blue;
+    border-bottom: 1px solid $dark-blue;
+}

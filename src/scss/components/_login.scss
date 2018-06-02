@@ -1,0 +1,67 @@
+.login {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin-bottom: $l-size;
+}
+
+.login__loginBtn,
+.login__featuresBtn {
+    background: $dark-blue;
+    color: white;
+    padding: $m-size $l-size;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.login__loginBtn {
+    margin-top: 50px;
+}
+
+.login__hero {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background: url('../images/login_hero.jpg');
+    background-size: cover;
+    height: 480px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__caption {
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+    text-align: center;
+    margin-top: $m-size;
+}
+
+.login__captionText {
+    width: 80%;
+    margin: $l-size auto;
+}
+
+.login__features {
+    grid-column: 2 / 12;
+    grid-row: 3 / 4;
+    display: block;
+    @media (min-width: $desktop-breakpoint) {
+        display: flex;
+    }
+}
+
+.login__features--feature {
+    padding: 0px $s-size;
+    @media (min-width: $desktop-breakpoint) {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 0 $s-size;
+    }
+}
+
+.login__featuresBtn {
+    margin-top: $l-size;
+}

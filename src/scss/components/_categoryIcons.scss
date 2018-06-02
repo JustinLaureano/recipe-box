@@ -1,0 +1,10 @@
+.categoryIcons {
+    background: $dark-blue;
+    width: 75%;
+    box-shadow: -$s-size $s-size 0 $dark-blue;
+}
+
+.categoryIcons__layout {
+    display: flex;
+    flex-wrap: wrap;
+}

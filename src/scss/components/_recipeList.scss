@@ -1,0 +1,17 @@
+.recipeList {
+    grid-column: 2 / 10;
+    display: flex;
+    flex-direction: column;
+    margin-top: $xl-size;
+}
+
+.recipeList__listItem {
+    cursor: pointer;
+    font-family: 'Open Sans', 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    font-weight: 700;
+    transition: $transition-speed;
+    &:hover {
+        font-size: $m-size-hover;
+    }
+}

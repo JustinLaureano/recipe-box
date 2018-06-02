@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $dark-blue;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'PT Sans', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 700;
+  line-height: 0;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 400;
+  line-height: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+fieldset {
+  font-family: 'Open Sans', 'PT Sans', Helvetica, Arial, sans-serif;
+  border: none;
+  font-weight: 700;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.is-active {
+  font-weight: bold;
+}

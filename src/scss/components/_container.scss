@@ -1,0 +1,20 @@
+.container {
+	min-height: 100vh;
+	background: url('../images/container__main.jpg') no-repeat center;
+	background-size: cover;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 68px auto 80px;
+}
+
+.container__page {
+	background: white;
+	grid-column: 2 / 12;
+	grid-row: 2 / 3;
+	box-shadow: 0px 0px 25px #000;
+}
+
+.container__viewRecipe {
+	grid-column: 1 / -1;
+}

@@ -1,0 +1,70 @@
+.viewRecipe {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto;
+}
+
+.viewRecipe__info {
+    display: flex;
+}
+
+.viewRecipe__name {
+    line-height: $m-size;
+}
+
+.viewRecipe__edit,
+.viewRecipe__remove {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.viewRecipe__edit {
+    margin-right: $m-size;
+    color: $dark-blue;
+}
+
+.viewRecipe__createdAt {
+    font-style: italic;
+    margin-left: auto;
+}
+
+.viewRecipe__editBtn,
+.viewRecipe__removeBtn {
+    height: $m-size;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.viewRecipe__general {
+    margin-top: $xl-size;
+}
+
+.viewRecipe__name {
+    font-weight: 700;
+}
+
+.viewRecipe__description {
+    font-style: italic;
+}
+
+.viewRecipe__ingredientsList {
+    line-height: 0;
+}
+
+.viewRecipe__ingredientItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr;
+}
+
+.viewRecipe__ingredientAmount {
+    grid-column: 1 / 2;
+}
+
+.viewRecipe__ingredient {
+    grid-column: 3 / -1;
+}
+
+.viewRecipe__proceduresList {
+    line-height: 1.8;
+}

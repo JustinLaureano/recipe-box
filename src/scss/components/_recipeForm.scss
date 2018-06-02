@@ -1,0 +1,203 @@
+.recipeForm {
+    grid-column: 2 / 12;
+    margin-bottom: $l-size;
+    color: $dark-blue;
+}
+
+.recipeForm__grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.recipeForm__inputGroup, .recipeForm__inputGroupRequired {
+    position: relative;
+}
+
+.recipeForm__inputRequired {
+    border: none;
+    border-bottom: 1px solid $dark-blue;
+    display: block;
+    width: 100%;
+    padding: $s-size 0;
+    &:focus {
+        outline: none;
+      }
+      &:focus ~ label,
+      &:valid ~ label {
+        top: -$font-size-small;
+        font-size: $font-size-small;
+        color: $dark-blue;
+      }
+}
+
+.recipeForm__input,
+.recipeForm__input--amount {
+    border: none;
+    border-bottom: 1px solid $dark-blue;
+    display: block;
+    width: 100%;
+    padding: $s-size 0;
+    &:focus {
+        outline: none;
+      }
+      &:focus ~ label,
+      &:not(:placeholder-shown) ~ label {
+        top: -$font-size-small;
+        font-size: $font-size-small;
+        color: $dark-blue;
+      }
+}
+
+.recipeForm__input--amount {
+    width: 85%;
+}
+
+.recipeForm__inputGroup label {
+    color: #333;
+    font-size: $m-size;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: .3s ease all;
+}
+
+.recipeForm__textarea {
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
+}
+
+.recipeForm__descriptionLabel {
+    line-height: 0;
+    margin: 4rem 0 2.4rem 0;
+}
+
+.recipeForm__general {
+    grid-column: 1 / 8;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.recipeForm__category {
+    margin-left: $m-size;
+    background: none;
+    border: none;
+    font-size: $font-size-large;
+}
+
+.recipeForm__name {
+    margin: $l-size 0;
+}
+
+.recipeForm__addIngredients {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipeForm__addIngredients h4 {
+    width: 100%;
+    margin-top: 2.8rem;
+}
+
+.recipeForm__addIngredientForm {
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+}
+
+.recipeForm__addIngredientBtn,
+.recipeForm__addProcedureBtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: $m-size;
+    line-height: 0;
+    text-transform: uppercase;
+    font-size: $m-size;
+    font-weight: 700;
+}
+
+.recipeForm__addIngredientBtnImg,
+.recipeForm__addNewProcedureBtnImg {
+    height: $m-size;
+    margin-right: 5px;
+}
+
+.recipeForm__ingredientList {
+    grid-column: 1 / 8;
+    line-height: .5;
+}
+
+.recipeForm__ingredientListItem {
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+}
+
+.recipeForm__removeNewIngredientBtn,
+.recipeForm__removeNewProcedureBtn {
+    height: $m-size;
+    align-self: center;
+    justify-self: self-end;
+    cursor: pointer;
+}
+
+.recipeForm__addProcedures {
+    grid-column: 1 / -1;
+}
+
+.recipeForm__addProcedureForm {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.recipeForm__procedureList {
+    grid-column: 1 / 8;
+    margin-top: $l-size;
+}
+
+.recipeForm__procedureListItem {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+.recipeForm__procedureListItem p {
+    margin: $xs-size 0;
+}
+
+.recipeForm__formBtns {
+    display: flex;
+    justify-content: flex-end;
+    margin: $l-size 0;
+}
+
+.recipeForm button {
+    background: white;
+    color: $dark-blue;
+    padding: $m-size $l-size;
+    border: none;
+    cursor: pointer;
+}
+
+#recipeForm__removeRecipeButton {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 0;
+    margin-right: auto;
+}
+
+#recipeForm__clearRecipeFields {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#recipeForm__submitRecipeButton {
+    background: $dark-blue;
+    padding: $m-size $m-size;
+    color: white;
+    text-transform: uppercase;
+}

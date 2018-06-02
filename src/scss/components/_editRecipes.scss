@@ -1,0 +1,20 @@
+.editRecipe {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.editRecipe__title {
+    grid-column: 2 / 12;
+}
+
+.editRecipe__remove {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.editRecipe__removeBtn {
+    height: $m-size;
+    cursor: pointer;
+    margin-right: 5px;
+}

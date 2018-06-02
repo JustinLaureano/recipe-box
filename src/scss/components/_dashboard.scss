@@ -1,0 +1,22 @@
+.dashboard {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto auto;
+    padding: $l-size 0;
+}
+
+.dashboard__overview {
+    grid-row: 2;
+    grid-column: 2/ 10;
+    display: flex;
+    justify-content: space-between;
+    margin: $xl-size 0 $m-size 0;
+    padding: 0px $m-size;
+}
+
+.dashboard__recipeView {
+    grid-row: 2;
+    grid-column: 2/ 10;
+    padding: $m-size $m-size 0 $m-size;
+}

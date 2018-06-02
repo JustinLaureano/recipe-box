@@ -1,0 +1,10 @@
+.addRecipe {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+
+.addRecipe__title {
+    grid-column: 2 / 12;
+    margin: $m-size 0 $l-size 0;
+}

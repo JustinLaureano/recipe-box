@@ -1,0 +1,48 @@
+.categoryIcon {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    color: white;
+    flex-grow: 1;
+}
+
+.categoryIcon__clickArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 99;
+}
+
+.categoryIcon__overlay {
+    background: $dark-blue;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.categoryIcon__info {
+    line-height: .1;
+    text-align: center;
+}
+
+.categoryIcon__info h3 {
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
+.categoryIcon__img {
+    height: 100%;
+    width: 100%;
+}
+
+.categoryIcon:hover .categoryIcon__overlay {
+    opacity: .75;
+}
